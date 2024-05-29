@@ -14,17 +14,18 @@ namespace FactoryPatternExercise2
             new Product() { Name = "Guitar", Price = 1000},
             new Product() { Name = "Blender", Price = 50},
            new Product() { Name = "Kite", Price = 25}
+        };
+public List<Product> LoadData()
+        {
+            Console.WriteLine("I am reading data from List Data Access");
+            return Products;
+        }
+
+        public void SaveData()
+        {
+            Console.WriteLine("I am saving data to a List Data Access");
         }
     }
-    public List<Product> LoadData()
-    {
-        Console.WriteLine("I am reading data from List Data Access");
-        return Products;
-    }
+  
+}
 
-    public void SaveData()
-    {
-        Console.WriteLine("I am saving data to a List Data Access");
-    }
-}
-}
